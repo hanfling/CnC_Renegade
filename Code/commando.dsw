@@ -1,5 +1,5 @@
 Microsoft Developer Studio Workspace File, Format Version 6.00
-# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+# WARNUNG: DIESE ARBEITSBEREICHSDATEI DARF NICHT BEARBEITET ODER GELÖSCHT WERDEN!
 
 ###############################################################################
 
@@ -185,6 +185,18 @@ Package=<4>
     Begin Project Dependency
     Project_Dep_Name GameSpy
     End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "launcher"=.\Launcher\launcher.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
 }}}
 
 ###############################################################################
