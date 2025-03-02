@@ -1,35 +1,35 @@
 # Microsoft Developer Studio Project File - Name="launcher" - Package Owner=<4>
 # Microsoft Developer Studio Generated Build File, Format Version 6.00
-# ** DO NOT EDIT **
+# ** NICHT BEARBEITEN **
 
 # TARGTYPE "Win32 (x86) Application" 0x0101
 
 CFG=launcher - Win32 Debug Demo
-!MESSAGE This is not a valid makefile. To build this project using NMAKE,
-!MESSAGE use the Export Makefile command and run
+!MESSAGE Dies ist kein gültiges Makefile. Zum Erstellen dieses Projekts mit NMAKE
+!MESSAGE verwenden Sie den Befehl "Makefile exportieren" und führen Sie den Befehl
 !MESSAGE 
 !MESSAGE NMAKE /f "launcher.mak".
 !MESSAGE 
-!MESSAGE You can specify a configuration when running NMAKE
-!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE Sie können beim Ausführen von NMAKE eine Konfiguration angeben
+!MESSAGE durch Definieren des Makros CFG in der Befehlszeile. Zum Beispiel:
 !MESSAGE 
 !MESSAGE NMAKE /f "launcher.mak" CFG="launcher - Win32 Debug Demo"
 !MESSAGE 
-!MESSAGE Possible choices for configuration are:
+!MESSAGE Für die Konfiguration stehen zur Auswahl:
 !MESSAGE 
-!MESSAGE "launcher - Win32 Release" (based on "Win32 (x86) Application")
-!MESSAGE "launcher - Win32 Debug" (based on "Win32 (x86) Application")
-!MESSAGE "launcher - Win32 Debug FDS" (based on "Win32 (x86) Application")
-!MESSAGE "launcher - Win32 Release FDS" (based on "Win32 (x86) Application")
-!MESSAGE "launcher - Win32 Debug Demo" (based on "Win32 (x86) Application")
-!MESSAGE "launcher - Win32 Release Demo" (based on "Win32 (x86) Application")
+!MESSAGE "launcher - Win32 Release" (basierend auf  "Win32 (x86) Application")
+!MESSAGE "launcher - Win32 Debug" (basierend auf  "Win32 (x86) Application")
+!MESSAGE "launcher - Win32 Debug FDS" (basierend auf  "Win32 (x86) Application")
+!MESSAGE "launcher - Win32 Release FDS" (basierend auf  "Win32 (x86) Application")
+!MESSAGE "launcher - Win32 Debug Demo" (basierend auf  "Win32 (x86) Application")
+!MESSAGE "launcher - Win32 Release Demo" (basierend auf  "Win32 (x86) Application")
 !MESSAGE 
 
 # Begin Project
 # PROP AllowPerConfigDependencies 0
 # PROP Scc_ProjName ""$/APILauncher", DJDAAAAA"
 # PROP Scc_LocalPath "."
-CPP=cl.exe
+CPP=xicl6.exe
 MTL=midl.exe
 RSC=rc.exe
 
@@ -47,7 +47,7 @@ RSC=rc.exe
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /YX /FD /c
-# ADD CPP /nologo /W3 /O1 /Ob2 /I "ToolKit" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "COPY_PROTECT" /FR /FD /c
+# ADD CPP /nologo /W3 /O1 /Ob2 /I "ToolKit" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /FR /FD /c
 # SUBTRACT CPP /YX
 # ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
 # ADD MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
@@ -56,7 +56,7 @@ RSC=rc.exe
 BSC32=bscmake.exe
 # ADD BASE BSC32 /nologo
 # ADD BSC32 /nologo
-LINK32=link.exe
+LINK32=xilink6.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /machine:I386
 # ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib /nologo /version:1.4 /subsystem:windows /machine:I386 /out:"..\..\Run\Launcher.exe"
 # SUBTRACT LINK32 /map
@@ -83,9 +83,9 @@ LINK32=link.exe
 BSC32=bscmake.exe
 # ADD BASE BSC32 /nologo
 # ADD BSC32 /nologo
-LINK32=link.exe
-# ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /debug /machine:I386 
-# ADD LINK32 patchw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib winmm.lib /nologo /subsystem:windows /debug /machine:I386 /out:"c:\renegade\cdver\renegade.exe"  /libpath:"."
+LINK32=xilink6.exe
+# ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /debug /machine:I386
+# ADD LINK32 patchw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib winmm.lib /nologo /subsystem:windows /debug /machine:I386 /out:"c:\renegade\cdver\renegade.exe" /libpath:"."
 
 !ELSEIF  "$(CFG)" == "launcher - Win32 Debug FDS"
 
@@ -110,9 +110,9 @@ LINK32=link.exe
 BSC32=bscmake.exe
 # ADD BASE BSC32 /nologo
 # ADD BSC32 /nologo
-LINK32=link.exe
-# ADD BASE LINK32 patchw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib winmm.lib /nologo /subsystem:windows /debug /machine:I386 /out:"c:\renegade\cdver\renegade.exe"  /libpath:"."
-# ADD LINK32 patchw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib winmm.lib /nologo /subsystem:windows /debug /machine:I386 /out:"..\..\Run\renegadeserver.exe"  /libpath:"."
+LINK32=xilink6.exe
+# ADD BASE LINK32 patchw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib winmm.lib /nologo /subsystem:windows /debug /machine:I386 /out:"c:\renegade\cdver\renegade.exe" /libpath:"."
+# ADD LINK32 patchw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib winmm.lib /nologo /subsystem:windows /debug /machine:I386 /out:"..\..\Run\renegadeserver.exe" /libpath:"."
 
 !ELSEIF  "$(CFG)" == "launcher - Win32 Release FDS"
 
@@ -139,7 +139,7 @@ LINK32=link.exe
 BSC32=bscmake.exe
 # ADD BASE BSC32 /nologo
 # ADD BSC32 /nologo
-LINK32=link.exe
+LINK32=xilink6.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib /nologo /version:1.4 /subsystem:windows /machine:I386 /out:"..\..\Run\Launcher.exe"
 # SUBTRACT BASE LINK32 /map
 # ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib /nologo /version:1.4 /subsystem:windows /machine:I386 /out:"..\..\Run\renegadeserver.exe"
@@ -168,9 +168,9 @@ LINK32=link.exe
 BSC32=bscmake.exe
 # ADD BASE BSC32 /nologo
 # ADD BSC32 /nologo
-LINK32=link.exe
-# ADD BASE LINK32 patchw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib winmm.lib /nologo /subsystem:windows /debug /machine:I386 /out:"..\..\Run\renegadeserver.exe"  /libpath:"."
-# ADD LINK32 patchw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib winmm.lib /nologo /subsystem:windows /debug /machine:I386 /out:"..\..\Run\consoleserverD.exe"  /libpath:"."
+LINK32=xilink6.exe
+# ADD BASE LINK32 patchw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib winmm.lib /nologo /subsystem:windows /debug /machine:I386 /out:"..\..\Run\renegadeserver.exe" /libpath:"."
+# ADD LINK32 patchw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib winmm.lib /nologo /subsystem:windows /debug /machine:I386 /out:"..\..\Run\consoleserverD.exe" /libpath:"."
 
 !ELSEIF  "$(CFG)" == "launcher - Win32 Release Demo"
 
@@ -197,7 +197,7 @@ LINK32=link.exe
 BSC32=bscmake.exe
 # ADD BASE BSC32 /nologo
 # ADD BSC32 /nologo
-LINK32=link.exe
+LINK32=xilink6.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib /nologo /version:1.4 /subsystem:windows /machine:I386 /out:"..\..\Run\renegadeserver.exe"
 # SUBTRACT BASE LINK32 /map
 # ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib /nologo /version:1.4 /subsystem:windows /machine:I386 /out:"..\..\Run\consoleserver.exe"
